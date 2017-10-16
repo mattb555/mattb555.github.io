@@ -1,0 +1,55 @@
+#Title {
+	margin-left: 100px;
+}
+
+#barontools {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-right: 0px;
+}
+
+#start {
+	margin-left: 5px;
+}
+
+#calc {
+	margin-left: 100px;
+}
+
+#PayButtons {
+	margin-left: 100px;
+}
+
+.red {
+	background-color: red;
+}
+
+.black {
+	background-color: black;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.white {
+	background-color: white;
+}
+
+.green {
+	background-color: green;
+}
+
+.player {
+	border-style: solid;
+	text-indent: 3%;
+	display: inline-block;
+	font-size: 10pt;
+}
+
+.colors {
+
+}
