@@ -336,22 +336,28 @@ function colorSelect() {
 		class: "colors"
 	});
 	$colorMe.append($("<option>", {
-		class: "white"
+		class: "white",
+		text: "White"
 	}));
 	$colorMe.append($("<option>", {
-		class: "black"
+		class: "black",
+		text: "Black"
 	}));
 	$colorMe.append($("<option>", {
-		class: "red"
+		class: "red",
+		text: "Red"
 	}));
 	$colorMe.append($("<option>", {
-		class: "green"
+		class: "green",
+		text: "Green"
 	}));
 	$colorMe.append($("<option>", {
-		class: "yellow"
+		class: "yellow",
+		text: "Yellow"
 	}));
 	$colorMe.append($("<option>", {
-		class: "blue"
+		class: "blue",
+		text: "Blue"
 	}));
 	$colorMe.change(function() {
 		$colorMe.css("background-color", $colorMe.find(":selected").css("background-color"));
