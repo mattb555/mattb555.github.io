@@ -21,6 +21,7 @@
 
 .red {
 	background-color: red;
+	color: black;
 }
 
 .black {
@@ -30,18 +31,22 @@
 
 .blue {
 	background-color: blue;
+	color: black;
 }
 
 .yellow {
 	background-color: yellow;
+	color: black;
 }
 
 .white {
 	background-color: white;
+	color: black;
 }
 
 .green {
 	background-color: green;
+	color: black;
 }
 
 .player {

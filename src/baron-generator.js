@@ -336,6 +336,12 @@ function colorSelect() {
 		class: "colors"
 	});
 	$colorMe.append($("<option>", {
+		disabled: "disabled",
+		selected: "selected",
+		hidden: "hidden",
+		class: "white"
+	}));
+	$colorMe.append($("<option>", {
 		class: "white",
 		text: "White"
 	}));
@@ -361,6 +367,7 @@ function colorSelect() {
 	}));
 	$colorMe.change(function() {
 		$colorMe.css("background-color", $colorMe.find(":selected").css("background-color"));
+		$colorMe.css("color", $colorMe.find(":selected").css("background-color"));
 	});
 	return $colorMe;
 }
