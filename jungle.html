@@ -17,6 +17,9 @@
 	<div class="content">
 		This utility is to help develop a plan for score maximization in the computer game <a href="http://store.steampowered.com/app/400160/Concrete_Jungle/">Concrete Jungle</a>.<br/>
 		In general, it is used to explore potential arrangements for the more basic buildings in the game and visualize how certain types of building placements affect score.<br/><br/>
+		The basic goal of the game is to collect a certain number of points in each row, starting with the bottom row. You do this by placing buildings that affect the value of tiles on the board
+		and tiles that collect the value of those tiles. The score for each row is the value of collected points squared. In a real game, once the bottom row reaches the target score, it is cleared and a new row inserted at the top.
+		If the next row above it is also at the target score, it will chain and provide a bonus, based on the number of chained rows thus far.<br/><br/>
 		<div ng-app="app" ng-controller="Main">
 			<div id="setters">
 				Width = <input type="number" ng-model="width" ng-change="tableSet()" placeholder="Width" min="1" />
