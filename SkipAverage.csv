@@ -1,98 +1,102 @@
-AverageSkipPercent,SongName,TotalSkips
-0.75120000,"Line in the Sand",1
-0.74320000,"Golden Touch - Full Length",1
-0.70810000,"Pokemon Theme",1
-0.65470000,"Stand - Remastered",1
-0.58410000,"Big In Japan - Original",1
-0.57930000,"American Girl",1
-0.55540000,Elstree,1
-0.54640000,"Heat Of The Moment",1
-0.53670000,"Crazy On You",1
-0.52730000,"Lady - Hear Me Tonight",1
-0.50610000,DARE,1
-0.49590000,"American Pie",1
-0.47350000,"Insane in the Brain",1
-0.44600000,Closer,1
-0.42970000,"Love Her Madly",1
-0.42710000,Borderline,1
-0.41980000,"Lights - Single Version",1
-0.38570000,"My Own Worst Enemy",3
-0.37900000,Daylight,1
-0.37900000,CORE,1
-0.36200000,"Goodbye Summer, Hello Winter",1
-0.27360000,"Regret - 2015 Remastered Version",1
-0.26480000,Savior,2
-0.25880000,"I Feel So",1
-0.24850000,"Shia LaBeouf Live",1
-0.24430000,"Breakfast In America - Remastered",1
-0.24210000,Saeed,1
-0.23060000,"Get Me Right",1
-0.22760000,Burns,1
-0.21950000,"Sexualizer (feat. Flash Arnold)",1
-0.19480000,Devour,1
-0.18650000,"Counting Stars",1
-0.18390000,"Patent Pending",1
-0.17650000,"Endlich Ein Grund Zur Panik",1
-0.15690000,Nightmare,1
-0.14300000,Lullaby,1
-0.13750000,"Right Now",1
-0.13130000,"(The Ballad Of) Sharknado",1
-0.11720000,Idioteque,1
-0.11400000,"Nothing To Fear (But Fear Itself)",1
-0.11140000,Patience,1
-0.10940000,"Come Undone",1
-0.10310000,"Escape From The City ...for City Escape",1
-0.09890000,"Call Me Maybe",1
-0.09620000,"Everything She Wants",1
-0.09550000,"Cruel To Be Kind",2
-0.09160000,"S.S. Recognize",1
-0.09060000,"Sometime Around Midnight",1
-0.08540000,"Welcome to the Black Parade",1
-0.08430000,"Bleed It Out",1
-0.08350000,"Shout, Pts. 1 & 2",1
-0.07890000,"Lay All Your Love On Me",1
-0.07170000,"The Primordial Booze",1
-0.07060000,"This Is My Head Exploding",1
-0.06210000,"Mexican Radio",1
-0.05890000,"Just Awake",1
-0.05240000,"Dirty Little Secret",1
-0.05140000,Supergirl,1
-0.04895000,Renegade,2
-0.04660000,"Crazy Train - Remastered",1
-0.04550000,"Try Honesty",1
-0.04440000,"Somewhere On Fullerton",1
-0.04200000,"Shut Up!",1
-0.04080000,"GhettoMusick - Club Mix",1
-0.03980000,Lump,1
-0.03690000,"When I Grow Up",1
-0.03520000,"Heartbeat Song",1
-0.03480000,"Move Your Body",1
-0.03400000,"Bota Shqipetare",1
-0.03040000,Boxer,1
-0.02945000,Thunderstruck,2
-0.02440000,"First Contact",1
-0.02380000,"7 Years",1
-0.02210000,"Big Machine",1
-0.02130000,"Thrash Unreal",1
-0.02080000,"Message In A Bottle - Remastered 2003",1
-0.02025000,"Map Of The Problematique",2
-0.01930000,"Skyfall - Full Length",1
-0.01920000,"(Wish I Could Fly Like) Superman",1
-0.01860000,"Homemade Valentine",1
-0.01750000,"Remember The Name (feat. Styles Of Beyond)",1
-0.01740000,"Making Plans For Nigel - 2001 - Remaster",1
-0.01560000,"Two Worlds",1
-0.01450000,"Chains Of Love",1
-0.01390000,"The Recluse",1
-0.01330000,"Direct Hit",1
-0.01310000,Pompeii,1
-0.01290000,"First Time",1
-0.01250000,"One Week",1
-0.01230000,"She Will Be Loved - Radio Mix",1
-0.01150000,"So Far Away",1
-0.01090000,"Death from Above",1
-0.01090000,"Sell Out",1
-0.00920000,"Here (In Your Arms)",1
-0.00850000,"Youth Of The Nation",1
-0.00680000,"Material Girl",2
-0.00550000,"The God I Know",1
+AverageSkipPercent,SongName,Artist,TotalSkips,Minutes,Seconds
+0.75119275,"Line in the Sand",ZOX,1,3,24
+0.74318822,"Golden Touch - Full Length",Razorlight,1,2,33
+0.70810767,"Pokemon Theme",Pokémon,1,2,19
+0.67984780,"Be Stiff - 2010 Remastered Version",DEVO,1,1,51
+0.58406835,"Big In Japan - Original",Alphaville,1,2,47
+0.57929224,"American Girl","The Infamous Stringdusters",1,2,48
+0.55544183,Elstree,"The Buggles",1,2,31
+0.54641825,"Heat Of The Moment",Asia,1,2,4
+0.53668552,"Crazy On You",Heart,1,2,37
+0.52733003,"Lady - Hear Me Tonight",Modjo,1,2,42
+0.50612043,DARE,Gorillaz,1,2,4
+0.49589622,"American Pie","Don McLean",1,4,16
+0.47352424,"Insane in the Brain","Cypress Hill",1,1,39
+0.44600922,Closer,"Project Pablo",1,3,6
+0.42965546,"Love Her Madly","The Doors",1,1,25
+0.42705698,Borderline,Khymera,1,1,43
+0.41977337,"Lights - Single Version","Ellie Goulding",1,1,29
+0.38570595,"My Own Worst Enemy",Lit,3,1,5
+0.37899659,CORE,"Toby Fox",1,1,3
+0.37899296,Daylight,"Matt and Kim",1,1,5
+0.36204916,"Goodbye Summer, Hello Winter",FantomenK,1,2,4
+0.34054726,"Stand - Remastered",R.E.M.,2,1,6
+0.27358388,"Regret - 2015 Remastered Version","New Order",1,1,8
+0.26478455,Savior,"Rise Against",2,1,4
+0.25877002,"I Feel So","Box Car Racer",1,1,10
+0.24845161,"Shia LaBeouf Live","Rob Cantor",1,0,39
+0.24431112,"Breakfast In America - Remastered",Supertramp,1,0,39
+0.24212924,Saeed,"Infected Mushroom",1,1,43
+0.23062207,"Get Me Right","Dashboard Confessional",1,0,45
+0.22762384,Burns,"George FitzGerald",1,0,58
+0.21953400,"Sexualizer (feat. Flash Arnold)",Perturbator,1,1,6
+0.21478133,"Direct Hit","Art Brut",2,0,46
+0.19475330,Devour,Shinedown,1,0,45
+0.18651949,"Counting Stars",OneRepublic,1,0,48
+0.18386968,"Patent Pending",Heavens,1,0,41
+0.17648061,"Endlich Ein Grund Zur Panik","Wir Sind Helden",1,0,39
+0.15692478,Nightmare,Halifax,1,0,37
+0.14296099,Lullaby,"The Cure",1,0,35
+0.13753589,"Right Now",SR-71,1,0,23
+0.13127203,"(The Ballad Of) Sharknado",Quint,1,0,15
+0.11718156,Idioteque,Radiohead,1,0,36
+0.11395067,"Nothing To Fear (But Fear Itself)","Oingo Boingo",1,0,27
+0.11143884,Patience,"Take That",1,0,23
+0.10938739,"Come Undone","My Darkest Days",1,0,27
+0.10313036,"Escape From The City ...for City Escape","Ted Poley",1,0,14
+0.09888679,"Call Me Maybe","Upon This Dawning",1,0,21
+0.09616392,"Everything She Wants","Saint Raymond",1,0,21
+0.09551015,"Cruel To Be Kind","Nick Lowe",2,0,20
+0.09159326,"S.S. Recognize","Alien Ant Farm",1,0,21
+0.09058389,"Sometime Around Midnight","The Airborne Toxic Event",1,0,28
+0.08544033,"Welcome to the Black Parade","My Chemical Romance",1,0,27
+0.08430454,"Bleed It Out","Linkin Park",1,0,14
+0.08351756,"Shout, Pts. 1 & 2","The Isley Brothers",1,0,22
+0.08179980,"Bring Me To Life",Evanescence,1,0,19
+0.07892343,"Lay All Your Love On Me",Avantasia,1,0,21
+0.07169200,"The Primordial Booze",Rainbowdragoneyes,1,0,14
+0.07063379,"This Is My Head Exploding","Disco Ensemble",1,0,17
+0.06212709,"Mexican Radio","Wall Of Voodoo",1,0,16
+0.05890481,"Just Awake","Fear, and Loathing in Las Vegas",1,0,13
+0.05240301,"Dirty Little Secret","The All-American Rejects",1,0,10
+0.05138043,Supergirl,Reamonn,1,0,13
+0.04891224,Renegade,Styx,2,0,13
+0.04661377,"Crazy Train - Remastered","Ozzy Osbourne",1,0,14
+0.04553302,"Try Honesty","Billy Talent",1,0,12
+0.04436214,"Somewhere On Fullerton",Allister,1,0,7
+0.04197042,"Shut Up!","Simple Plan",1,0,8
+0.04082883,"GhettoMusick - Club Mix",OutKast,1,0,10
+0.03976900,Lump,"The Presidents Of The United States Of America",1,0,5
+0.03685581,"When I Grow Up","Mayday Parade",1,0,8
+0.03519925,"Heartbeat Song","The Futureheads",1,0,5
+0.03475709,"Move Your Body","Blessed By A Broken Heart",1,0,7
+0.03404906,"Bota Shqipetare","Nazif Cela",1,0,7
+0.03036311,Boxer,"The Gaslight Anthem",1,0,5
+0.02947624,Thunderstruck,AC/DC,2,0,9
+0.02439842,"First Contact","Matthew Samia",1,0,3
+0.02383059,"7 Years","Lukas Graham",1,0,6
+0.02209388,"Big Machine","The Goo Goo Dolls",1,0,4
+0.02133360,"Thrash Unreal","Against Me!",1,0,5
+0.02079716,"Message In A Bottle - Remastered 2003","The Police",1,0,6
+0.02026032,"Map Of The Problematique",Muse,2,0,5
+0.01926138,"Skyfall - Full Length",Adele,1,0,6
+0.01918196,"(Wish I Could Fly Like) Superman","The Kinks",1,0,4
+0.01855516,"Homemade Valentine","Children 18:3",1,0,3
+0.01747125,"Remember The Name (feat. Styles Of Beyond)","Fort Minor",1,0,4
+0.01735225,"Making Plans For Nigel - 2001 - Remaster",XTC,1,0,4
+0.01558761,"Two Worlds","Phil Collins",1,0,3
+0.01512135,"One Week","Barenaked Ladies",2,0,3
+0.01448831,"Chains Of Love",Erasure,1,0,3
+0.01389238,"The Recluse",Cursive,1,0,3
+0.01305178,Pompeii,Bastille,1,0,3
+0.01294441,"First Time",Lifehouse,1,0,3
+0.01227197,"She Will Be Loved - Radio Mix","Maroon 5",1,0,3
+0.01175904,"Born to Run","Bruce Springsteen",1,0,3
+0.01154890,"So Far Away",Staind,1,0,3
+0.01094979,"Sell Out","Reel Big Fish",1,0,2
+0.01093963,"Death from Above","Machinae Supremacy",1,0,2
+0.00918327,"Here (In Your Arms)",Hellogoodbye,1,0,2
+0.00848033,"Youth Of The Nation",P.O.D.,1,0,2
+0.00766681,Talons,"Bloc Party",1,0,2
+0.00678167,"Material Girl",Madonna,2,0,2
+0.00546539,"The God I Know","Love & The Outcome",1,0,1
