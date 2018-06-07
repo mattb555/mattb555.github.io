@@ -19,8 +19,6 @@
 	var pack = d3.pack()
 		.size([width, height])
 		.padding(1.5);
-		
-	var color = d3.scaleSequential(d3.interpolateCool);
 			
 	var tooltip = d3.select("body")
 		.style("background-color", "black")
@@ -62,12 +60,29 @@
 		} else {
 			data.Seconds = "0" + tempSeconds;
 		}
+		data.Length = +data["Length"] / 1000;
 		return data;
 	}, function(error, classes) {
 
-		color.domain([classes[classes.length - 1].AverageSkipPercent, classes[0].AverageSkipPercent]);
+	
+	/*color = d3.scale.linear().domain([1,length])
+      .interpolate(d3.interpolateHcl)
+      .range([d3.rgb("#6699ff"), d3.rgb('#99ff66')]);*/
+		var color = d3.scaleLinear()
+			.domain([classes[classes.length - 1].AverageSkipPercent, classes[0].AverageSkipPercent])
+			.interpolate(d3.interpolateHclLong)
+			.range([d3.rgb("#cc66ff"), d3.rgb('#99ff66')]);
 	    var nodes = d3.hierarchy({children: classes})
 			.sum(function(d) { return d.AverageSkipPercent });
+			
+		let maxLength = -1;
+		let minLength = 50000000;
+		for (i = 0; i < classes.length; i++) {
+			maxLength = Math.max(classes[i].Length, maxLength);
+			minLength = Math.min(classes[i].Length, minLength);
+		}
+		maxLength = Math.ceil(maxLength);
+		minLength = Math.floor(minLength);
 			
 		var data = pack(nodes).leaves();
 			
@@ -124,6 +139,11 @@
 				.style("display", "block")
 				.style("padding-top", "10px")
 				.style("color", "white");
+			var lengthDiv = slideDiv.append("div")
+				.attr("class", "lengthDiv")
+				.style("display", "block")
+				.style("padding-top", "10px")
+				.style("color", "white");
 			
 				
 			countDiv.append("p")
@@ -158,20 +178,40 @@
 				.attr("class", "percentSelect");
 			percentDiv.append("span")
 				.text("100");
+			
+			lengthDiv.append("p")
+				.text("Filter by min Song Length: ")
+				.append("span")
+				.text(minLength)
+				.attr("class", "lengthDisplay");
+			lengthDiv.append("span")
+				.text(minLength);
+			lengthDiv.append("input")
+				.attr("type", "range")
+				.attr("min", minLength)
+				.attr("max", maxLength)
+				.attr("value", minLength)
+				.attr("step", 1)
+				.attr("class", "lengthSelect");
+			lengthDiv.append("span")
+				.text(maxLength);
 				
 			var selected = d3.select(".countSelect");
 			var percented = d3.select(".percentSelect");
+			var lengthed = d3.select(".lengthSelect");
 			
 			selected.on("input", function(d) { d3.select(".countDisplay").text(selected.property("value")); })
-				    .on("change", function(d) { updateData(selected.property("value"), percented.property("value")); })
+				    .on("change", function(d) {	updateData(selected.property("value"), percented.property("value"), lengthed.property("value")); });
 			percented.on("input", function(d) { d3.select(".percentDisplay").text(Math.round(percented.property("value") * 100)); })
-					.on("change", function(d) {	updateData(selected.property("value"), percented.property("value")); });
+					.on("change", function(d) { updateData(selected.property("value"), percented.property("value"), lengthed.property("value")); });
+			lengthed.on("input", function(d) { d3.select(".lengthDisplay").text(lengthed.property("value")); })
+					.on("change", function(d) {	updateData(selected.property("value"), percented.property("value"), lengthed.property("value")); });
 				
-			function updateData(num, skipP) {
+			function updateData(num, skipP, minLength) {
 				var s = d3.transition().duration(400);
 				var t = d3.transition().duration(750);
 				var l = d3.transition().duration(1200);
-				var newclasses = classes.filter(function(d) { return (d.TotalSkips > num - 1 && d.AverageSkipPercent > skipP) });
+				var newclasses = classes.filter(function(d) { return (d.TotalSkips > num - 1 && d.AverageSkipPercent > skipP && d.Length >= minLength) });
 				if (newclasses.length > 0) {
 					color.domain([newclasses[newclasses.length - 1].AverageSkipPercent -.000001, newclasses[0].AverageSkipPercent]);
 				}
