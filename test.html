@@ -65,7 +65,7 @@
 		return data;
 	}, function(error, classes) {
 
-		color.domain([classes[classes.length - 1].AverageSkipPercent * .07, classes[0].AverageSkipPercent * 1.25]);
+		color.domain([classes[classes.length - 1].AverageSkipPercent, classes[0].AverageSkipPercent]);
 	    var nodes = d3.hierarchy({children: classes})
 			.sum(function(d) { return d.AverageSkipPercent });
 			
@@ -90,7 +90,7 @@
 					.html(d.data.SongName + "<br/>" + d.data.Artist + "<br/>" + "Average Skip:" + d.data.Minutes + ":" + d.data.Seconds)
 					.style("left", Math.max(parseFloat(d3.select(this).attr("cx")) - node.getBoundingClientRect().width, 0) + "px")
 					.style("top", Math.max(parseFloat(d3.select(this).attr("cy")) - node.getBoundingClientRect().height, 0) + "px");
-				d3.select(this).attr("class", "selected").transition(400).style("fill", "Blue");
+				d3.select(this).attr("class", "selected").transition(400).style("fill", "#FDBCB4");
 			})
 			.on("mouseout", function(d) {
 				tooltip.style("display", "none");
@@ -103,7 +103,7 @@
 			.text(function(d){ if (d.data.AverageSkipPercent > .35) {
 					return d.data.SongName; }})
 			.attr("text-anchor", "middle")
-			.style('fill', 'white')
+			.style('fill', 'black')
 			.style('font-family', 'Helvetica Neue, Helvetica, Arial, san-serif')
 			.style('font-size', '12px')
 			.style('user-select', 'none')
@@ -173,7 +173,7 @@
 				var l = d3.transition().duration(1200);
 				var newclasses = classes.filter(function(d) { return (d.TotalSkips > num - 1 && d.AverageSkipPercent > skipP) });
 				if (newclasses.length > 0) {
-					color.domain([newclasses[newclasses.length - 1].AverageSkipPercent * .07, newclasses[0].AverageSkipPercent * 1.25]);
+					color.domain([newclasses[newclasses.length - 1].AverageSkipPercent -.000001, newclasses[0].AverageSkipPercent]);
 				}
 				var newnodes = d3.hierarchy({children: newclasses})
 					.sum(function(d) { return d.AverageSkipPercent });
@@ -213,7 +213,7 @@
 							.html(d.data.SongName + "<br/>" + d.data.Artist + "<br/>" + "Average Skip:" + d.data.Minutes + ":" + d.data.Seconds)
 							.style("left", Math.max(parseFloat(d3.select(this).attr("cx")) - node.getBoundingClientRect().width, 0) + "px")
 							.style("top", Math.max(parseFloat(d3.select(this).attr("cy")) - node.getBoundingClientRect().height, 0) + "px");
-						d3.select(this).attr("class", "selected").transition(400).style("fill", "Blue");
+						d3.select(this).attr("class", "selected").transition(400).style("fill", "#FDBCB4");
 					})
 					.on("mouseout", function(d) {
 						tooltip.style("display", "none");
@@ -229,7 +229,7 @@
 					.text(function(d){ if (d.data.AverageSkipPercent > newclasses[0].AverageSkipPercent * .35) {
 							return d.data.SongName; }})
 					.attr("text-anchor", "middle")
-					.style('fill', 'white')
+					.style('fill', 'black')
 					.style('font-family', 'Helvetica Neue, Helvetica, Arial, san-serif')
 					.style('font-size', '12px')
 					.style('user-select', 'none')
