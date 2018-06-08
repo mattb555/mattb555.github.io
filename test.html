@@ -9,7 +9,7 @@
 		.style("display", "block")
 		.style("max-width", "800px")
 		.append("h1")
-		.text("Spotify Song Analysis")
+		.text("Spotify Skip Analysis")
 		.style("color", "white")
 		.style("text-align", "center");
 		
@@ -40,13 +40,22 @@
 		
 	tooltip = d3.select("#tooltip");
 	
-	var svg = d3.select("body")
+	var svgcontainer = d3.select("body")
 		.append("div")
 		.attr("id", "svgcontainer")
-		.style("display", "inline-block")
-		.append("svg")
+		.style("display", "inline-block");
+		
+	var svg = svgcontainer.append("svg")
 		.attr("width", width)
 		.attr("height", height);
+	
+	var totalsongcount = svgcontainer.append("p")
+		.style("text-align", "center")
+		.text("Total Songs: ")
+		.style("color", "white")
+		.append("span")
+		.attr("id", "filteredtotal")
+		.style("color", "white");
 		
 	d3.csv("SkipAverage.csv", function(data) {
 		data.AverageSkipPercent = +data["AverageSkipPercent"];
@@ -54,6 +63,7 @@
 		data.TotalSkips = +data["TotalSkips"];
 		data.Artist = data["Artist"];
 		data.Minutes = data["Minutes"];
+		data.Id = data["SpotID"];
 		tempSeconds = +data["Seconds"];
 		if (tempSeconds > 9) {
 			data.Seconds = data["Seconds"];
@@ -64,10 +74,6 @@
 		return data;
 	}, function(error, classes) {
 
-	
-	/*color = d3.scale.linear().domain([1,length])
-      .interpolate(d3.interpolateHcl)
-      .range([d3.rgb("#6699ff"), d3.rgb('#99ff66')]);*/
 		var color = d3.scaleLinear()
 			.domain([classes[classes.length - 1].AverageSkipPercent, classes[0].AverageSkipPercent])
 			.interpolate(d3.interpolateHclLong)
@@ -89,6 +95,10 @@
 		var bubbles = svg.selectAll("circle")
 			.data(data, function(d) { return d.data.SongName; })
 			.enter();
+			
+		var clips = svg.selectAll("clipPath")
+			.data(data, function(d) { return d.data.Id;})
+			.enter();
 		
 		var text = svg.selectAll("text")
 			.data(data, function(d) { return d.data.SongName; })
@@ -96,6 +106,7 @@
 
 		bubbles.append("circle")
 			.attr("r", function(d){ return d.r; })
+			.attr("id", function(d) { return d.data.Id})
 			.style("fill", function(d, i) { return color(d.data.AverageSkipPercent)})
 			.attr("cx", function(d){ return d.x; })
 			.attr("cy", function(d){ return d.y; })
@@ -111,8 +122,14 @@
 				tooltip.style("display", "none");
 				d3.select(this).attr("class", null).transition(400).style("fill", function(d, i) { return color(d.data.AverageSkipPercent)});
 			});
-
-		 text.append("text")
+			
+		clips.append("clipPath")
+			.attr("id", function(d) { return d.data.Id + "-clip"})
+			.append("use")
+			.attr("xlink:href", function(d) { return "#" + d.data.Id; });
+			
+		text.append("text")
+			.attr("clip-path", function(d) { return "url(#" + d.data.Id + "-clip)";})
 			.attr("x", function(d){ return d.x; })
 			.attr("y", function(d){ return d.y; })
 			.text(function(d){ if (d.data.AverageSkipPercent > .35) {
@@ -122,7 +139,10 @@
 			.style('font-family', 'Helvetica Neue, Helvetica, Arial, san-serif')
 			.style('font-size', '12px')
 			.style('user-select', 'none')
-			.style('pointer-events', 'none')
+			.style('pointer-events', 'none');
+		
+		d3.select("#filteredtotal")
+			.text(classes.length);
 			
 			var slideDiv = d3.select("body")
 				.append("div")
@@ -165,7 +185,7 @@
 			percentDiv.append("p")
 				.text("Filter by min % Skip: ")
 				.append("span")
-				.text("0")
+				.text("0%")
 				.attr("class", "percentDisplay");
 			percentDiv.append("span")
 				.text("0");
@@ -182,7 +202,7 @@
 			lengthDiv.append("p")
 				.text("Filter by min Song Length: ")
 				.append("span")
-				.text(minLength)
+				.text(minLength + " seconds")
 				.attr("class", "lengthDisplay");
 			lengthDiv.append("span")
 				.text(minLength);
@@ -202,9 +222,9 @@
 			
 			selected.on("input", function(d) { d3.select(".countDisplay").text(selected.property("value")); })
 				    .on("change", function(d) {	updateData(selected.property("value"), percented.property("value"), lengthed.property("value")); });
-			percented.on("input", function(d) { d3.select(".percentDisplay").text(Math.round(percented.property("value") * 100)); })
+			percented.on("input", function(d) { d3.select(".percentDisplay").text(Math.round(percented.property("value") * 100) + "%"); })
 					.on("change", function(d) { updateData(selected.property("value"), percented.property("value"), lengthed.property("value")); });
-			lengthed.on("input", function(d) { d3.select(".lengthDisplay").text(lengthed.property("value")); })
+			lengthed.on("input", function(d) { d3.select(".lengthDisplay").text(lengthed.property("value") + " seconds"); })
 					.on("change", function(d) {	updateData(selected.property("value"), percented.property("value"), lengthed.property("value")); });
 				
 			function updateData(num, skipP, minLength) {
@@ -215,6 +235,8 @@
 				if (newclasses.length > 0) {
 					color.domain([newclasses[newclasses.length - 1].AverageSkipPercent -.000001, newclasses[0].AverageSkipPercent]);
 				}
+				d3.select("#filteredtotal")
+					.text(newclasses.length);
 				var newnodes = d3.hierarchy({children: newclasses})
 					.sum(function(d) { return d.AverageSkipPercent });
 			
@@ -225,9 +247,13 @@
 				
 				text = svg.selectAll("text")
 					.data(newdata, function(d) { return d.data.SongName; });
+					
+				clips = svg.selectAll("clipPath")
+					.data(newdata, function(d) { return d.data.Id});
 				
 				text.exit().transition(s).attr("opacity", 1e-6).remove();
 				bubbles.exit().transition(t).attr("r", 1e-6).remove();
+				clips.exit().transition(t).attr("r", 1e-6).remove();
 				
 				bubbles.transition(t)
 					.attr("r", function(d){ return d.r; })
@@ -243,6 +269,7 @@
 					
 				bubbles.enter()
 					.append("circle")
+					.attr("id", function(d) { return d.data.Id})
 					.attr("r", function(d){ return 1e-6; })
 					.attr("cx", function(d){ return d.x; })
 					.attr("cy", function(d){ return d.y; })
@@ -262,7 +289,13 @@
 					.transition(t)
 					.attr("r", function(d) { return d.r });
 					
+				clips.enter().append("clipPath")
+					.attr("id", function(d) { return d.data.Id + "-clip"})
+					.append("use")
+					.attr("xlink:href", function(d) { return "#" + d.data.Id; });	
+					
 				text.enter().append("text")
+					.attr("clip-path", function(d) { return "url(#" + d.data.Id + "-clip)";})
 					.attr("opacity", 1e-6)
 					.attr("x", function(d){ return d.x; })
 					.attr("y", function(d){ return d.y; })
