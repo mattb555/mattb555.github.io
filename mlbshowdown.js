@@ -1,0 +1,8 @@
+export default function MLBShowdown() {
+    return <div id="displaycontent" class="content">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/x3Amub55WUY"></iframe>
+        <br/>
+        <a class="linklist" href="https://github.com/mattb555/MLB-Showdown">Github</a><br/>
+        <a class="linklist" href="http://wolfboy_888.tripod.com/wolfboy888smlbshowdownpage/id17.html">Rules Reference</a><br/>
+    </div>;
+}

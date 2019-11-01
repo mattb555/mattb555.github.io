@@ -1,20 +1,5 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="src/style.css">
-    <link rel="stylesheet" type="text/css" href="src/jungle-style.css">
-    <script src="src/jquery-3.2.1.min.js"></script>
-    <script src="src/index-load.js" type="text/javascript"></script>
-    <script src="Engine/Data/buildings.js"></script>
-    <script src="src/angular.min.js"></script>
-    <script src="src/angular-sanitize.js"></script>
-
-    <meta charset="utf-8" />
-    <title>Concrete Jungle Solver</title>
-</head>
-<body>
-	<div id="menuholder"></div>
-	<div class="content">
+export default function Jungle() {
+    <div class="content">
 		This utility is to help develop a plan for score maximization in the computer game <a href="http://store.steampowered.com/app/400160/Concrete_Jungle/">Concrete Jungle</a>.<br/>
 		In general, it is used to explore potential arrangements for the more basic buildings in the game and visualize how certain types of building placements affect score.<br/><br/>
 		The basic goal of the game is to collect a certain number of points in each row, starting with the bottom row. You do this by placing buildings that affect the value of tiles on the board
@@ -41,5 +26,4 @@
 			<script src="Engine/jungleController.js"></script>
 		</div>
     </div>
-</body>
-</html> 
+}

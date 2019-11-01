@@ -22,6 +22,9 @@ function setUp() {
 	});
 	$("body").css("background-color", "white");
 	$("body").show();
+	$('#NotFootballStadium').load('src/embeddedfootball.html');
+	$("#displaycontent").load("src/mlbcontent.html");
+	$('#Resume').load('src/embedresume.html');
 }
 
 window.onload = setUp;
