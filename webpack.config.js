@@ -5,7 +5,8 @@ module.exports = {
         publicPath: '/dist/'
     },
     devServer: {
-        watchContentBase: true
+        watchContentBase: true,
+        historyApiFallback: true,
     },
     module: {
         rules: [{
