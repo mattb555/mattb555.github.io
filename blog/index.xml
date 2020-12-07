@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Matthew Bunge</title>
-    <link>https://mattb555.github.io/blog/</link>
+    <link>https://matthewbunge.com/blog/</link>
     <description>Recent content in Blogs on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 21:09:12 -0800</lastBuildDate><atom:link href="https://mattb555.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 21:09:12 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Site</title>
-      <link>https://mattb555.github.io/blog/newsite/</link>
+      <link>https://matthewbunge.com/blog/newsite/</link>
       <pubDate>Sun, 06 Dec 2020 21:09:12 -0800</pubDate>
       
-      <guid>https://mattb555.github.io/blog/newsite/</guid>
+      <guid>https://matthewbunge.com/blog/newsite/</guid>
       <description>My original website is years old at this point and kind of a mess, so I decided to make a new one. This time around I decided to harness the power of a static site generator. After trying a couple out, I decided to go with Hugo. I want my personal site to be more of a personal blog and I think Hugo is extremely adept at handling that use case.</description>
     </item>
     
