@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matthew Bunge</title>
-    <link>http://mattb555.github.io/</link>
+    <link>https://mattb555.github.io/</link>
     <description>Recent content on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 21:09:12 -0800</lastBuildDate><atom:link href="http://mattb555.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 21:09:12 -0800</lastBuildDate><atom:link href="https://mattb555.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resume</title>
-      <link>http://mattb555.github.io/resume/</link>
+      <link>https://mattb555.github.io/resume/</link>
       <pubDate>Sun, 06 Dec 2020 21:13:40 -0800</pubDate>
       
-      <guid>http://mattb555.github.io/resume/</guid>
+      <guid>https://mattb555.github.io/resume/</guid>
       <description>Matthew Bunge Education University of Washington
 Bachelor of Science: Computer Science, Economics
 Experience TagMaster North America Nov 2019-  .NET Framework Spring Framework C# Java MySQL Python  Projects Board Game Recommender  D3.js SQL Spring Framework Java  Project Aether  Flutter S3 Lambda DynamoDB API Gateway  Damocles  Node.js Express.js React.js Heroku  </description>
@@ -20,10 +20,10 @@ Experience TagMaster North America Nov 2019-  .NET Framework Spring Framework C#
     
     <item>
       <title>New Site</title>
-      <link>http://mattb555.github.io/blog/newsite/</link>
+      <link>https://mattb555.github.io/blog/newsite/</link>
       <pubDate>Sun, 06 Dec 2020 21:09:12 -0800</pubDate>
       
-      <guid>http://mattb555.github.io/blog/newsite/</guid>
+      <guid>https://mattb555.github.io/blog/newsite/</guid>
       <description>My original website is years old at this point and kind of a mess, so I decided to make a new one. This time around I decided to harness the power of a static site generator. After trying a couple out, I decided to go with Hugo. I want my personal site to be more of a personal blog and I think Hugo is extremely adept at handling that use case.</description>
     </item>
     
