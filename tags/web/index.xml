@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on Matthew Bunge</title>
-    <link>https://matthewbunge.com/blog/</link>
-    <description>Recent content in Blogs on Matthew Bunge</description>
+    <title>Web on Matthew Bunge</title>
+    <link>https://matthewbunge.com/tags/web/</link>
+    <description>Recent content in Web on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Dec 2020 19:39:29 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 19:39:29 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Site Pt. 2</title>
       <link>https://matthewbunge.com/blog/newsite2/</link>

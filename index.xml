@@ -6,7 +6,16 @@
     <description>Recent content on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Dec 2020 21:09:12 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Dec 2020 19:39:29 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Site Pt. 2</title>
+      <link>https://matthewbunge.com/blog/newsite2/</link>
+      <pubDate>Mon, 07 Dec 2020 19:39:29 -0800</pubDate>
+      
+      <guid>https://matthewbunge.com/blog/newsite2/</guid>
+      <description>Today I wrapped up some outstanding issues related to the site relating to the DNS and Domain Host. In particular, I transferred the matthewbunge.com domain from GoDaddy, where I had held it for 7 years, to Namecheap. The primary motiviation was financial: the running costs of the website were reduced by approximately 55% annually. In practice, this is like 12 bucks, but saved money for no real cost is still saved money.</description>
+    </item>
+    
     <item>
       <title>Resume</title>
       <link>https://matthewbunge.com/resume/</link>

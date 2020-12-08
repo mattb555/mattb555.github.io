@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resume on Matthew Bunge</title>
+    <link>https://matthewbunge.com/tags/resume/</link>
+    <description>Recent content in Resume on Matthew Bunge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Dec 2020 21:13:40 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/tags/resume/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resume</title>
+      <link>https://matthewbunge.com/resume/</link>
+      <pubDate>Sun, 06 Dec 2020 21:13:40 -0800</pubDate>
+      
+      <guid>https://matthewbunge.com/resume/</guid>
+      <description>Matthew Bunge Education University of Washington
+Bachelor of Science: Computer Science, Economics
+Experience TagMaster North America Nov 2019-  .NET Framework Spring Framework C# Java MySQL Python  Projects Board Game Recommender  D3.js SQL Spring Framework Java  Project Aether  Flutter S3 Lambda DynamoDB API Gateway  Damocles  Node.js Express.js React.js Heroku  </description>
+    </item>
+    
+  </channel>
+</rss>
