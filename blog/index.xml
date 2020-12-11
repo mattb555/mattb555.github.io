@@ -6,9 +6,19 @@
     <description>Recent content in Blogs on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Dec 2020 19:39:29 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 00:42:49 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>New Site Pt. 2</title>
+      <title>Damocles: Casing Woes</title>
+      <link>https://matthewbunge.com/blog/caseofcase/</link>
+      <pubDate>Fri, 11 Dec 2020 00:42:49 -0800</pubDate>
+      
+      <guid>https://matthewbunge.com/blog/caseofcase/</guid>
+      <description>I wrapped up a long running refactor of my online board game Damocles today with a deployment to Heroku. I want to focus this post on a pain point I ran into while doing this related to casing.
+The purpose behind the refactor was to break up a monolithic file containing almost every React based piece of the project into separate files for all the React components. Part of this involved renaming some of the existing files, as I wanted to go from lowercase to PascalCase (ie, damoclesgame to DamoclesGame).</description>
+    </item>
+    
+    <item>
+      <title>Personal Site: New Site Pt. 2</title>
       <link>https://matthewbunge.com/blog/newsite2/</link>
       <pubDate>Mon, 07 Dec 2020 19:39:29 -0800</pubDate>
       
@@ -17,7 +27,7 @@
     </item>
     
     <item>
-      <title>New Site</title>
+      <title>Personal Site: New Site</title>
       <link>https://matthewbunge.com/blog/newsite/</link>
       <pubDate>Sun, 06 Dec 2020 21:09:12 -0800</pubDate>
       

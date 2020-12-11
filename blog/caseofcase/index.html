@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Damocles: Casing Woes | Matthew Bunge</title>
+  <meta name="description" content="This is the personal site of Matthew Bunge, a Software Developer based in Tacoma, Washington. It contains his personal blogging about Software, or anything else he feels like putting effort into.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Damocles: Casing Woes" />
+<meta property="og:description" content="I wrapped up a long running refactor of my online board game Damocles today with a deployment to Heroku. I want to focus this post on a pain point I ran into while doing this related to casing.
+The purpose behind the refactor was to break up a monolithic file containing almost every React based piece of the project into separate files for all the React components. Part of this involved renaming some of the existing files, as I wanted to go from lowercase to PascalCase (ie, damoclesgame to DamoclesGame)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://matthewbunge.com/blog/caseofcase/" />
+<meta property="article:published_time" content="2020-12-11T00:42:49-08:00" />
+<meta property="article:modified_time" content="2020-12-11T00:42:49-08:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Damocles: Casing Woes"/>
+<meta name="twitter:description" content="I wrapped up a long running refactor of my online board game Damocles today with a deployment to Heroku. I want to focus this post on a pain point I ran into while doing this related to casing.
+The purpose behind the refactor was to break up a monolithic file containing almost every React based piece of the project into separate files for all the React components. Part of this involved renaming some of the existing files, as I wanted to go from lowercase to PascalCase (ie, damoclesgame to DamoclesGame)."/>
+
+  
+  
+  
+  <link rel="stylesheet" href="https://matthewbunge.com/css/style-white.css">
+  
+  
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://matthewbunge.com/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+    <header id="header">
+  <a href="https://matthewbunge.com">
+  
+    <div id="logo" style="background-image: url(https://matthewbunge.com/images/logo.png)"></div>
+  
+  <div id="title">
+    <h1>Matthew Bunge</h1>
+  </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/resume/">Resume</a></li>
+      
+        <li><a href="/blog/">Blog</a></li>
+      
+    </ul>
+  </div>
+</header>
+
+
+
+    
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="content" itemprop="articleBody">
+  
+    <p>I wrapped up a long running refactor of my online board game Damocles today with a deployment to Heroku. I want to focus this post on a pain point I ran into while doing this related to casing.</p>
+<p>The purpose behind the refactor was to break up a monolithic file containing almost every React based piece of the project into separate files for all the React components. Part of this involved renaming some of the existing files, as I wanted to go from lowercase to PascalCase (ie, damoclesgame to DamoclesGame). The details of what went wrong aren&rsquo;t really as interesting as the lessons learned, so I&rsquo;m moving straight ahead to that.</p>
+<ul>
+<li>Changing case of existing files in git will not register as a change without the command: <code>git mv casedfile.js CasedFile.js</code></li>
+<li>Node on Heroku needs exact file casing or else everything breaks.</li>
+</ul>
+<p>Good lessons to learn, and as of now Damocles is back up and playable (as much as it ever was). I&rsquo;m going to go ahead and add it to my front page here for anyone interested (though you&rsquo;re going to need a friend).</p>
+
+  
+  </div>
+</article>
+
+
+    <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2020  Matthew Bunge 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/resume/">Resume</a></li>
+         
+        <li><a href="/blog/">Blog</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+</html>

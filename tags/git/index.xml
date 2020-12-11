@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Matthew Bunge</title>
+    <link>https://matthewbunge.com/tags/git/</link>
+    <description>Recent content in Git on Matthew Bunge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Dec 2020 00:42:49 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damocles: Casing Woes</title>
+      <link>https://matthewbunge.com/blog/caseofcase/</link>
+      <pubDate>Fri, 11 Dec 2020 00:42:49 -0800</pubDate>
+      
+      <guid>https://matthewbunge.com/blog/caseofcase/</guid>
+      <description>I wrapped up a long running refactor of my online board game Damocles today with a deployment to Heroku. I want to focus this post on a pain point I ran into while doing this related to casing.
+The purpose behind the refactor was to break up a monolithic file containing almost every React based piece of the project into separate files for all the React components. Part of this involved renaming some of the existing files, as I wanted to go from lowercase to PascalCase (ie, damoclesgame to DamoclesGame).</description>
+    </item>
+    
+  </channel>
+</rss>
