@@ -6,7 +6,17 @@
     <description>Recent content in Damocles on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Dec 2020 00:42:49 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/tags/damocles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 00:05:07 -0800</lastBuildDate><atom:link href="https://matthewbunge.com/tags/damocles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damocles: New Tools</title>
+      <link>https://matthewbunge.com/blog/newtools/</link>
+      <pubDate>Mon, 21 Dec 2020 00:05:07 -0800</pubDate>
+      
+      <guid>https://matthewbunge.com/blog/newtools/</guid>
+      <description>I just wrapped up reconfiguring Damocles to use Bootstrap and layout-wise I am extremely happy with the result. The Bootstrap integration with React is excellent and intuitive and I look forward to doing more with it. The next step is going to involve getting some more labels put up and otherwise reworking a bunch of fixed strings so it&amp;rsquo;s not like I&amp;rsquo;m going to need to wait long.
+In other news, I decided to treat myself and I went and bought a number of JetBrains tools, including their web development IDE &amp;ldquo;WebStorm&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>Damocles: Casing Woes</title>
       <link>https://matthewbunge.com/blog/caseofcase/</link>

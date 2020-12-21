@@ -2,3 +2,4 @@
 node_modules/
 oldhtml/
 package-lock.json
+.idea/
