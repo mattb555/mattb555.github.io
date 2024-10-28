@@ -6,11 +6,29 @@
     <description>Recent content in Tags on Matthew Bunge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 May 2022 18:48:23 -0700</lastBuildDate><atom:link href="https://matthewbunge.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Oct 2024 22:00:00 -0700</lastBuildDate><atom:link href="https://matthewbunge.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Damocles</title>
+      <link>https://matthewbunge.com/tags/damocles/</link>
+      <pubDate>Sun, 27 Oct 2024 22:00:00 -0700</pubDate>
+      
+      <guid>https://matthewbunge.com/tags/damocles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heroku</title>
+      <link>https://matthewbunge.com/tags/heroku/</link>
+      <pubDate>Sun, 27 Oct 2024 22:00:00 -0700</pubDate>
+      
+      <guid>https://matthewbunge.com/tags/heroku/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Personal</title>
       <link>https://matthewbunge.com/tags/personal/</link>
-      <pubDate>Mon, 09 May 2022 18:48:23 -0700</pubDate>
+      <pubDate>Sun, 27 Oct 2024 22:00:00 -0700</pubDate>
       
       <guid>https://matthewbunge.com/tags/personal/</guid>
       <description></description>
@@ -19,7 +37,7 @@
     <item>
       <title>Personal Site</title>
       <link>https://matthewbunge.com/tags/personal-site/</link>
-      <pubDate>Mon, 09 May 2022 18:48:23 -0700</pubDate>
+      <pubDate>Sun, 27 Oct 2024 22:00:00 -0700</pubDate>
       
       <guid>https://matthewbunge.com/tags/personal-site/</guid>
       <description></description>
@@ -31,15 +49,6 @@
       <pubDate>Mon, 21 Dec 2020 00:05:07 -0800</pubDate>
       
       <guid>https://matthewbunge.com/tags/bootstrap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Damocles</title>
-      <link>https://matthewbunge.com/tags/damocles/</link>
-      <pubDate>Mon, 21 Dec 2020 00:05:07 -0800</pubDate>
-      
-      <guid>https://matthewbunge.com/tags/damocles/</guid>
       <description></description>
     </item>
     
@@ -67,15 +76,6 @@
       <pubDate>Fri, 11 Dec 2020 00:42:49 -0800</pubDate>
       
       <guid>https://matthewbunge.com/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Heroku</title>
-      <link>https://matthewbunge.com/tags/heroku/</link>
-      <pubDate>Fri, 11 Dec 2020 00:42:49 -0800</pubDate>
-      
-      <guid>https://matthewbunge.com/tags/heroku/</guid>
       <description></description>
     </item>
     
